@@ -31,6 +31,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
@@ -42,6 +45,16 @@
     <Compile Include="DjangoTicTacToe\settings.py" />
     <Compile Include="DjangoTicTacToe\urls.py" />
     <Compile Include="DjangoTicTacToe\wsgi.py" />
+    <Compile Include="player\admin.py" />
+    <Compile Include="player\apps.py" />
+    <Compile Include="player\migrations\__init__.py" />
+    <Compile Include="player\models.py" />
+    <Compile Include="player\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="player\tests.py" />
+    <Compile Include="player\views.py" />
+    <Compile Include="player\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -54,8 +67,13 @@
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="DjangoTicTacToe\" />
+    <Folder Include="player\" />
+    <Folder Include="player\migrations\" />
+    <Folder Include="player\templates\" />
+    <Folder Include="player\templates\player\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="player\templates\player\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
