@@ -3,8 +3,14 @@
 {% block content %}
 
 <div class="jumbotron">
-    <h1>Player</h1>
-    {{ content }}
+    <h1>Welcome, {{user.username}}</h1>
 </div>
+
+<ul>
+    {% for g in games %}
+    <li>Game {{ g.id }}: {{ g.first_player }} vs {{ g.second_player }} </li>
+    {% endfor %}
+</ul>
+
 
 {% endblock %}
