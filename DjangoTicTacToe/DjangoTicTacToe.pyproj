@@ -47,6 +47,9 @@
     <Compile Include="DjangoTicTacToe\wsgi.py" />
     <Compile Include="player\admin.py" />
     <Compile Include="player\apps.py" />
+    <Compile Include="player\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="player\migrations\__init__.py" />
     <Compile Include="player\models.py" />
     <Compile Include="player\urls.py">
