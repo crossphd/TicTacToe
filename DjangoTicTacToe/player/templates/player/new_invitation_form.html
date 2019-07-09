@@ -1,0 +1,13 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h1>Invitation form</h1>
+<form action="{% url 'player_new_invitation' %}" method="post">
+    {{ form }}
+    {% csrf_token %}
+    <button type="submit">Send the invitation</button>
+</form>
+
+
+{% endblock %}
